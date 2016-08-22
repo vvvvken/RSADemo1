@@ -15,7 +15,6 @@
 		857986EC1D6B4B2300978E63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857986EA1D6B4B2300978E63 /* LaunchScreen.storyboard */; };
 		857986F61D6B4BC100978E63 /* VKRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 857986F51D6B4BC100978E63 /* VKRSA.m */; };
 		857986F91D6B4DE300978E63 /* VKRSAKeyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 857986F81D6B4DE300978E63 /* VKRSAKeyHelper.m */; };
-		857986FF1D6B521F00978E63 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 857986FE1D6B521F00978E63 /* RSA.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +32,6 @@
 		857986F51D6B4BC100978E63 /* VKRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKRSA.m; sourceTree = "<group>"; };
 		857986F71D6B4DE300978E63 /* VKRSAKeyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRSAKeyHelper.h; sourceTree = "<group>"; };
 		857986F81D6B4DE300978E63 /* VKRSAKeyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKRSAKeyHelper.m; sourceTree = "<group>"; };
-		857986FD1D6B521F00978E63 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
-		857986FE1D6B521F00978E63 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +64,6 @@
 		857986DB1D6B4B2300978E63 /* RSADemo1 */ = {
 			isa = PBXGroup;
 			children = (
-				857986FD1D6B521F00978E63 /* RSA.h */,
-				857986FE1D6B521F00978E63 /* RSA.m */,
 				857986F31D6B4BB400978E63 /* Classes */,
 				857986DF1D6B4B2300978E63 /* AppDelegate.h */,
 				857986E01D6B4B2300978E63 /* AppDelegate.m */,
@@ -172,7 +167,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				857986FF1D6B521F00978E63 /* RSA.m in Sources */,
 				857986E41D6B4B2300978E63 /* ViewController.m in Sources */,
 				857986F61D6B4BC100978E63 /* VKRSA.m in Sources */,
 				857986F91D6B4DE300978E63 /* VKRSAKeyHelper.m in Sources */,
@@ -326,6 +320,7 @@
 				857986F21D6B4B2300978E63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

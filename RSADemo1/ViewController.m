@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "VKRSAKeyHelper.h"
 #import "VKRSA.h"
-#import "RSA.h"
 
 static NSString* testPrivateKeyPem = @"-----BEGIN PRIVATE KEY-----\
 MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDIxqmcAe6XPIMo\
