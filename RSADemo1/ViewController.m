@@ -81,10 +81,6 @@ swIDAQAB\
     }
     
     _encryptData = [VKRSA encryptData:originData withKey:publicKey];
-    
-    
-    //_encryptData = [RSA encryptData:originData withKeyRef:publicKey];
-    
 }
 - (IBAction)onDecrypt:(id)sender {
     
