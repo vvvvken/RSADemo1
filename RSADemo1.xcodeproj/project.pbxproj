@@ -15,6 +15,8 @@
 		857986EC1D6B4B2300978E63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857986EA1D6B4B2300978E63 /* LaunchScreen.storyboard */; };
 		857986F61D6B4BC100978E63 /* VKRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 857986F51D6B4BC100978E63 /* VKRSA.m */; };
 		857986F91D6B4DE300978E63 /* VKRSAKeyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 857986F81D6B4DE300978E63 /* VKRSAKeyHelper.m */; };
+		85A8DDE71D6B693000F877C8 /* rsa_private_key_pkcs8.pem in Resources */ = {isa = PBXBuildFile; fileRef = 85A8DDE51D6B693000F877C8 /* rsa_private_key_pkcs8.pem */; };
+		85A8DDE81D6B693000F877C8 /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 85A8DDE61D6B693000F877C8 /* rsa_public_key.pem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		857986F51D6B4BC100978E63 /* VKRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKRSA.m; sourceTree = "<group>"; };
 		857986F71D6B4DE300978E63 /* VKRSAKeyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRSAKeyHelper.h; sourceTree = "<group>"; };
 		857986F81D6B4DE300978E63 /* VKRSAKeyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKRSAKeyHelper.m; sourceTree = "<group>"; };
+		85A8DDE51D6B693000F877C8 /* rsa_private_key_pkcs8.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key_pkcs8.pem; sourceTree = "<group>"; };
+		85A8DDE61D6B693000F877C8 /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		857986DB1D6B4B2300978E63 /* RSADemo1 */ = {
 			isa = PBXGroup;
 			children = (
+				85A8DDE01D6B667B00F877C8 /* Resource */,
 				857986F31D6B4BB400978E63 /* Classes */,
 				857986DF1D6B4B2300978E63 /* AppDelegate.h */,
 				857986E01D6B4B2300978E63 /* AppDelegate.m */,
@@ -95,6 +100,15 @@
 				857986F81D6B4DE300978E63 /* VKRSAKeyHelper.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		85A8DDE01D6B667B00F877C8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				85A8DDE51D6B693000F877C8 /* rsa_private_key_pkcs8.pem */,
+				85A8DDE61D6B693000F877C8 /* rsa_public_key.pem */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				857986EC1D6B4B2300978E63 /* LaunchScreen.storyboard in Resources */,
+				85A8DDE81D6B693000F877C8 /* rsa_public_key.pem in Resources */,
+				85A8DDE71D6B693000F877C8 /* rsa_private_key_pkcs8.pem in Resources */,
 				857986E91D6B4B2300978E63 /* Assets.xcassets in Resources */,
 				857986E71D6B4B2300978E63 /* Main.storyboard in Resources */,
 			);

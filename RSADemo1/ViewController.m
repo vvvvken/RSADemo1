@@ -11,46 +11,35 @@
 #import "VKRSA.h"
 
 static NSString* testPrivateKeyPem = @"-----BEGIN PRIVATE KEY-----\
-MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDIxqmcAe6XPIMo\
-ocN6fs86AcvriCFnoAXYmhTSMaQMZ3M26RNrYFn6zKc8q4yGi9pQJT+84WeHSE1b\
-UCuF0KrOWeE2JrM1n5zL5FYnkEKQ7kRossy9JNUnMrD7XkQWYbjelYumDLYkkE+/\
-UHUf9fvRyeSI4nI6cqKQ0k6sVoUj+TZisaXRFgetRZrBydAxV0ZBZ0EvayzjvVuG\
-PaReVp9FKuBUcRiFdLMz/2Ogfo1irX7OHx+Tx9DpoW5Vj+qxnBccXRWNvZKRu21F\
-6cbz91+OomGa0pysUJ1xG+DbfzKClktlZWm+mdv1PN+eDodKrvuOrFdd6rneY8/y\
-r80OqrazAgMBAAECggEAMMl9a2hYxq0wnc35ByoLRugq2hfhLiIHaaO/TXg8ibsV\
-lxE548ys8LGMLcTtx7/yE6mJfGc1Vf0utvKbMNAMwUm73QG4aF5Zpn3cpY57bmZH\
-fz17XLa3iOfbc6lrWBj06DlkjrvmAqqChlWRsGuAfnDVtKF56lPyxsgjz+LSRXQZ\
-z7cK1xV6kn2K/EkFMSRYLrYaGAW5XkxzsF3loGc4WVAgezv4DTwWwOb113s10rZs\
-k8nmiGwcdQxwysQ81duIUtRkDBBXfch4eO0RjlERWdcCBI0mrMZZ3l9NDlAW6YpL\
-RZWNJGqc/uHLwER0XXzR5GEgKmH6Ap8WexpEsABVoQKBgQD0rqtvpU2aB0tiWVYO\
-6mwhYaMQtbkAZU7D12pZ/nrckaA4rn2OAhx8UxQ58RT34XFxxe6zWIshdJeQG4Rt\
-QUSYdQ1sFVa4RhFfHm2GfCFVxAlzwzZFR9+pzP8BGsYUrMbUjbQYl/VMFwVHmpzp\
-Y0fqThetqUBDlI3SueynqjtJkQKBgQDSEBcU8PVEm8SJfq8tirtYx888e05zvU47\
-p4inG7vKaK/nn1IwKpMAi0YStNhWmmuxj0+WdMbGTDVzb1FwtKPZiaw971pmxqxq\
-DPfpafP51H54qPUS3UNeJQzrn2WFZgkAPZTBZ9kvogzrbWzhZ77I1GCR7A8q9z05\
-MiCQNW46AwKBgE7QbJxbzLFOpDObvyKy0/20q4fYYS0FdOeUXcd7NywRJGDdo8e4\
-WmCZiixXwX9O+PHC5e6TGM2/9ooOswtWOLg7DAXCodpdh37yGCl3lm0/5iOJv9N1\
-IVBandFHRIKoXKtesaIyYGsQBz1XSi/LMQECApKHsBGUqlI0XUxsgwhhAoGAFD9i\
-yizzpzpQdmRUpFIj/sm7qvvDsxpDKTLb1CezMS5oDi5oMKZZ5wqFpZXy6F4YFVRX\
-+oulAUYlPMw1EGUJChXgGVQx5Ygu5EX9u2zwDFu0GRNIFBppvPBbT3bcxT/xjClj\
-ZkUJRTMchbDVduCWHiuCZ25Wg/Cy4Ql45A2SY1sCgYAr6Z67YLIjloZQYJxKlDAl\
-wHLNjMt2FD04Nq+8Gbr9j2YNQg3VQsffpIBG/RzQtUkQk++d8G/djn1smgkmjpUL\
-inaJEpqVpbJXYPm5jFr1HFuD/uHQM60OT6IgSnWZANNJmTh3zKUhBaMs9n760sHK\
-zxOTYLkGAkITt6vwWW1kLA==\
+MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAL8VQpM6fdMV21Wa\
+lERf933AWzNGGndab3Jdw1R1+MW4hq7oqH/5GJ7YmNBA637zU4jTTzPv+NGO7+tk\
+mHYgyaDB/7NE2509WvoSBq0yrWqsNCq16OgExJvtlb5Q9Bt9mFbsirz1tIHmGc8I\
+6iOv01O5nD+qgmmC17CCu9UegaBnAgMBAAECgYA9JaSEULdrERd7MVg4+SzNxPxq\
+UAiwIPSA+JhFMutE+mO/HRyutxu12UItgljZ6yvUISq7SBOrm74S6cIQKzXZ+UnT\
+wYLs9Y57zMeowYuQ+M9x6C9x7aaqpzzfBQ6yVjFzQenWqbSPLh3X+eN7ZGJpDcOz\
+MvnXdXecX2Ox42gEYQJBAPddsSrzRtYCkKRtLwgdcd3z6DA4mwT1jUXhjTuGbZEU\
+f8zjaimV0f85uvLsbpk3djzVLBY4Ain9vjaA4MaIHwsCQQDFwKiof59L6VBXDFCx\
+kKxvhYMf9yv6k7qNPtU3cJ3M1DEenWeN7Htt0hag0BZadNW4xt6RvSqQ3gaGPGdX\
+nA2VAkB/gx2LzWIreaEEEYBYB42l41BCYzuN3+JWLoG2OIKMceu7O1ODYkag8Sps\
+hPIyKwPZMe4K+g4rhTCjOeYkkRCnAkBxe2sOLxbSMFT7b0TLcVOTOBIUgPqK9MXk\
+kn83LnhP+CEsCXZIusHmNt7ncCKzzEJtpCpLhjvsII2r8PP5EcO1AkA4RA3aoQbY\
+RlQ7GXeQjsH6erpyOIWBYbQg34T2Zr+D/BkQUTLawoozDhUSdTtMqC5cdYV3ICXl\
+pFpgnvqP7ASJ\
 -----END PRIVATE KEY-----";
+
 static NSString* testPublicKeyPem = @"-----BEGIN PUBLIC KEY-----\
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyMapnAHulzyDKKHDen7P\
-OgHL64ghZ6AF2JoU0jGkDGdzNukTa2BZ+synPKuMhovaUCU/vOFnh0hNW1ArhdCq\
-zlnhNiazNZ+cy+RWJ5BCkO5EaLLMvSTVJzKw+15EFmG43pWLpgy2JJBPv1B1H/X7\
-0cnkiOJyOnKikNJOrFaFI/k2YrGl0RYHrUWawcnQMVdGQWdBL2ss471bhj2kXlaf\
-RSrgVHEYhXSzM/9joH6NYq1+zh8fk8fQ6aFuVY/qsZwXHF0Vjb2SkbttRenG8/df\
-jqJhmtKcrFCdcRvg238ygpZLZWVpvpnb9Tzfng6HSq77jqxXXeq53mPP8q/NDqq2\
-swIDAQAB\
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/FUKTOn3TFdtVmpREX/d9wFsz\
+Rhp3Wm9yXcNUdfjFuIau6Kh/+Rie2JjQQOt+81OI008z7/jRju/rZJh2IMmgwf+z\
+RNudPVr6EgatMq1qrDQqtejoBMSb7ZW+UPQbfZhW7Iq89bSB5hnPCOojr9NTuZw/\
+qoJpgtewgrvVHoGgZwIDAQAB\
 -----END PUBLIC KEY-----";
 
 @interface ViewController ()
 
 @property(nonatomic,retain) NSData*     encryptData;
+
+@property(nonatomic,retain) NSString*   privateKeyPem;
+@property(nonatomic,retain) NSString*   publicKeyPem;
 
 @end
 
@@ -58,7 +47,24 @@ swIDAQAB\
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSError* error = nil;
+    NSString* privateKeyPemFile = [[NSBundle mainBundle]pathForResource:@"rsa_private_key_pkcs8" ofType:@"pem"];
+    _privateKeyPem = [NSString stringWithContentsOfFile:privateKeyPemFile encoding:NSUTF8StringEncoding error:&error];
+    
+    if(error)
+    {
+        NSLog(@"error:%@",error.localizedDescription);
+    }
+    
+    NSString* publicKeyPemFile = [[NSBundle mainBundle]pathForResource:@"rsa_public_key" ofType:@"pem"];
+    _publicKeyPem = [NSString stringWithContentsOfFile:publicKeyPemFile encoding:NSUTF8StringEncoding error:&error];
+    
+    if(error)
+    {
+        NSLog(@"error:%@",error.localizedDescription);
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,7 +79,7 @@ swIDAQAB\
     
     //准备公钥
     NSError* error = nil;
-    SecKeyRef publicKey = [VKRSAKeyHelper publicKeyOfPem:testPublicKeyPem error:&error];
+    SecKeyRef publicKey = [VKRSAKeyHelper publicKeyOfPem:_publicKeyPem error:&error];
     if(error || publicKey == nil)
     {
         NSLog(@"omg,there is an error :%@",error?error.localizedDescription:@"public key fail");
@@ -86,7 +92,7 @@ swIDAQAB\
     
     //准备私钥
     NSError* error = nil;
-    SecKeyRef privateKey = [VKRSAKeyHelper privateKeyOfPem:testPrivateKeyPem error:&error];
+    SecKeyRef privateKey = [VKRSAKeyHelper privateKeyOfPem:_privateKeyPem error:&error];
     if(error || privateKey==nil)
     {
         NSLog(@"omg,there is an error :%@",error ?error.localizedDescription:@"private key fail");
